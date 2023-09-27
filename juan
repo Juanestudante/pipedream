@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (){
+   unsigned char armario = 0
+   int x = 1, pos;
+   srand(time(NULL));
+
+   while(x){
+
+    printf("\n ARMARIOS\n--- digite uma opção: \n. ocupar armario\n. sair do armario");
+    scanf("%d", &pos);
+    
+    unsigned char mask = 1, print
+    int n = 1, armar;
+    switch(pos){
+        case 1:
+           while(n){
+              armar = rand()%8;
+                mask = mas << armar;
+            if(!(armario&mask)){
+               armario = armario^mask;
+               printf("seu armario e %d\n", armar + 1);
+             n = 0
+            }
+         } 
+          for(int i = 0; i <= 8; i++){
+          printf("%d", armario)}
+
+          break;
+
+        case 2: printf("escolha o armario a ser liberado: ");
+        scanf("%d", &armar);
+        mask = mask<<armar;
+        if(armario&mask)( armario = armario^mask);
+        printf("agora o armario esta livre %d", armar);
+
+        for(int i = 0; i <= 8; i++){
+            print = armario
+            print = print>>i;
+            printf("%d", aramario);
+            break
+        }
+
+          
+          // perdão os erros de ortografia, ainda não coloquei no portugues brasileiro e o programa fica todo estranho se colar acento e tals.
+                            
+    }
+   }
+return 0
+}
